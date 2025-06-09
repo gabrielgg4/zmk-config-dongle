@@ -9,3 +9,6 @@ config SHIELD_LOTUS58_RIGHT
     
 config SHIELD_LOTUS58_DONGLE
 	def_bool $(shields_list_contains,lotus58_dongle)
+
+config SHIELD_LOTUS58_LEFT_PERIPHERAL
+    def_bool $(shields_list_contains,lily58_left_peripheral)
