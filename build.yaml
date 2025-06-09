@@ -54,19 +54,33 @@
 ---
 include:
     ###### LOTUS 58 ###### 
-    #  ProMicro_Dongle
+    #  ProMicro_Dongle Sem ZMK Studio
     - board: nice_nano_v2
       shield: lotus58_dongle dongle_display
-      cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58Dongle_P\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+      cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58Dongle_P\"   -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=60000
       artifact-name: nice_lotus58_dongle_oled
       snippet: studio-rpc-usb-uart
    
-    # Lutus 58 Left Master
+    # Lotus 58 Left Master Sem ZMK Studio
     - board: nice_nano_v2
       shield: lotus58_left 
-      cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+      cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58\"   -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
       artifact-name: nice_lotus58_left
       snippet: studio-rpc-usb-uart
+    
+
+    # - board: nice_nano_v2
+    #   shield: lotus58_dongle dongle_display
+    #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58Dongle_P\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=n -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+    #   artifact-name: nice_lotus58_dongle_oled
+    #   snippet: studio-rpc-usb-uart
+   
+    # # Lotus 58 Left Master
+    # - board: nice_nano_v2
+    #   shield: lotus58_left 
+    #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lotus58\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+    #   artifact-name: nice_lotus58_left
+    #   snippet: studio-rpc-usb-uart
     
     - board: nice_nano_v2
       shield: lotus58_right 
